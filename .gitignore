@@ -144,6 +144,7 @@ buildNumber.properties
 
 # Local History for Visual Studio Code
 .history/
+target/
 
 # Built Visual Studio Code Extensions
 *.vsix

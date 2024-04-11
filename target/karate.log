@@ -4249,3 +4249,1156 @@ classpath:conduitApp/feature/SignUp.feature:26
 
 12:22:54.516 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:conduitApp/feature/SignUp.feature
 12:22:54.517 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+12:59:13.630 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @smoke
+12:59:13.999 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:59:14.001 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1712833154000
+12:59:14.535 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:59:14.794 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 86
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"ezekiel74@test.com","password":"rommel1rommel1","username":"thao7"}}
+
+12:59:15.409 [main] DEBUG com.intuit.karate - response time in milliseconds: 610
+1 < 201
+1 < Date: Thu, 11 Apr 2024 10:59:15 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 306
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712833155&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=PCbS3sPM81zYxlel1e7sgsgAABXKVkg5ljnUik0cuQU%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712833155&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=PCbS3sPM81zYxlel1e7sgsgAABXKVkg5ljnUik0cuQU%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"132-nrEVzBBevsIyLzrBFTKzQQIbNFo"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872a77531da55ced-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"user":{"id":20125,"email":"ezekiel74@test.com","username":"thao7","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyMDEyNX0sImlhdCI6MTcxMjgzMzE1NSwiZXhwIjoxNzE4MDE3MTU1fQ.RdURhYG6jn8IOPqeBUkn7MtPECB19plaEt94WF3rwro"}}
+
+12:59:15.418 [main] DEBUG com.intuit.karate - request:
+2 > POST https://api.realworld.io/api/users
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 86
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+2 > Accept-Encoding: gzip,deflate
+{"user":{"email":"ezekiel74@test.com","password":"rommel1rommel1","username":"thao7"}}
+
+12:59:15.678 [main] DEBUG com.intuit.karate - response time in milliseconds: 257
+2 < 422
+2 < Date: Thu, 11 Apr 2024 10:59:15 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 85
+2 < Connection: keep-alive
+2 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712833155&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=PCbS3sPM81zYxlel1e7sgsgAABXKVkg5ljnUik0cuQU%3D"}]}
+2 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712833155&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=PCbS3sPM81zYxlel1e7sgsgAABXKVkg5ljnUik0cuQU%3D
+2 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"55-NjrsT9gca4ZDmlQ/ixYZy7cuscc"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Server: cloudflare
+2 < CF-RAY: 872a7755cfaa669b-MAD
+2 < alt-svc: h3=":443"; ma=86400
+{"errors":{"email":["has already been taken"],"username":["has already been taken"]}}
+
+12:59:16.010 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:conduitApp/feature/SignUp.feature
+12:59:16.010 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+13:00:22.504 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @smoke
+13:00:22.870 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:00:22.871 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1712833222870
+13:00:23.396 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:00:23.637 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 86
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"tamatha29@test.com","password":"rommel1rommel1","username":"see31"}}
+
+13:00:24.216 [main] DEBUG com.intuit.karate - response time in milliseconds: 574
+1 < 201
+1 < Date: Thu, 11 Apr 2024 11:00:24 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 306
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712833223&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=PVQFFQmJFilbmcflNBEwke1ZXsUvloAC%2BXnghUPFI6o%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712833223&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=PVQFFQmJFilbmcflNBEwke1ZXsUvloAC%2BXnghUPFI6o%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"132-y3y0ISeR7HVGMLwcKWhnPwCFjlE"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872a7900fe986653-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"user":{"id":20126,"email":"tamatha29@test.com","username":"see31","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyMDEyNn0sImlhdCI6MTcxMjgzMzIyNCwiZXhwIjoxNzE4MDE3MjI0fQ.sqeRn1cuFJtN0Pv51ChZCmjJcxD-Q7NbuC_CaCaoU58"}}
+
+13:00:24.222 [main] DEBUG com.intuit.karate - request:
+2 > POST https://api.realworld.io/api/users
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 86
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+2 > Accept-Encoding: gzip,deflate
+{"user":{"email":"tamatha29@test.com","password":"rommel1rommel1","username":"see31"}}
+
+13:00:24.494 [main] DEBUG com.intuit.karate - response time in milliseconds: 271
+2 < 422
+2 < Date: Thu, 11 Apr 2024 11:00:24 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 85
+2 < Connection: keep-alive
+2 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712833224&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=JPE7GDubHOmSAw6fymFxe56xdqKLDkWbx%2FNv3T4cKjc%3D"}]}
+2 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712833224&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=JPE7GDubHOmSAw6fymFxe56xdqKLDkWbx%2FNv3T4cKjc%3D
+2 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"55-NjrsT9gca4ZDmlQ/ixYZy7cuscc"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Server: cloudflare
+2 < CF-RAY: 872a7903caee2f83-MAD
+2 < alt-svc: h3=":443"; ma=86400
+{"errors":{"email":["has already been taken"],"username":["has already been taken"]}}
+
+13:00:24.827 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:conduitApp/feature/SignUp.feature
+13:00:24.827 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+13:01:43.802 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @smoke
+13:01:44.160 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:01:44.161 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1712833304160
+13:01:44.722 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:01:44.969 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 91
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"santiago24@test.com","password":"rommel1rommel1","username":"stefanie1"}}
+
+13:01:45.500 [main] DEBUG com.intuit.karate - response time in milliseconds: 524
+1 < 201
+1 < Date: Thu, 11 Apr 2024 11:01:45 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 311
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712833305&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=TeWS7ssP5ihEs4D1nFUkx6QpBOZ0bj%2BKSWfsL%2F1mcI0%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712833305&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=TeWS7ssP5ihEs4D1nFUkx6QpBOZ0bj%2BKSWfsL%2F1mcI0%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"137-3kPUgdfY+6BHduPJK63wPMbjZHs"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872a7afd6e3b2f98-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"user":{"id":20128,"email":"santiago24@test.com","username":"stefanie1","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyMDEyOH0sImlhdCI6MTcxMjgzMzMwNSwiZXhwIjoxNzE4MDE3MzA1fQ.cGeztFSPsskGBp36906LlakC1tdbTQkOvPL0dLbo0uE"}}
+
+13:01:45.509 [main] DEBUG com.intuit.karate - request:
+2 > POST https://api.realworld.io/api/users
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 91
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+2 > Accept-Encoding: gzip,deflate
+{"user":{"email":"santiago24@test.com","password":"rommel1rommel1","username":"stefanie1"}}
+
+13:01:45.786 [main] DEBUG com.intuit.karate - response time in milliseconds: 275
+2 < 422
+2 < Date: Thu, 11 Apr 2024 11:01:45 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 85
+2 < Connection: keep-alive
+2 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712833305&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=TeWS7ssP5ihEs4D1nFUkx6QpBOZ0bj%2BKSWfsL%2F1mcI0%3D"}]}
+2 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712833305&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=TeWS7ssP5ihEs4D1nFUkx6QpBOZ0bj%2BKSWfsL%2F1mcI0%3D
+2 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"55-NjrsT9gca4ZDmlQ/ixYZy7cuscc"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Server: cloudflare
+2 < CF-RAY: 872a7affdc70665f-MAD
+2 < alt-svc: h3=":443"; ma=86400
+{"errors":{"email":["has already been taken"],"username":["has already been taken"]}}
+
+13:01:46.121 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:conduitApp/feature/SignUp.feature
+13:01:46.121 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+13:06:17.765 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @smoke
+13:06:18.132 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:06:18.133 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1712833578132
+13:06:18.701 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:06:18.948 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 89
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"tracie13@test.com","password":"rommel1rommel1","username":"clarisa71"}}
+
+13:06:19.511 [main] DEBUG com.intuit.karate - response time in milliseconds: 554
+1 < 201
+1 < Date: Thu, 11 Apr 2024 11:06:19 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 309
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712833579&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=HHklP%2B4ov7cCxlFhVhdOqqcNBGHShY%2FY6aSb9DoZl20%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712833579&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=HHklP%2B4ov7cCxlFhVhdOqqcNBGHShY%2FY6aSb9DoZl20%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"135-j19r1ASv2P8ol9v35wuXul6zt2U"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872a81ae09ab314d-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"user":{"id":20129,"email":"tracie13@test.com","username":"clarisa71","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyMDEyOX0sImlhdCI6MTcxMjgzMzU3OSwiZXhwIjoxNzE4MDE3NTc5fQ.JgMo_T0DjxQ6WhOts3ZBxYmU7xDpMOPo-dctfxpJA54"}}
+
+13:06:19.524 [main] DEBUG com.intuit.karate - request:
+2 > POST https://api.realworld.io/api/users
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 89
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+2 > Accept-Encoding: gzip,deflate
+{"user":{"email":"tracie13@test.com","password":"rommel1rommel1","username":"clarisa71"}}
+
+13:06:19.823 [main] DEBUG com.intuit.karate - response time in milliseconds: 294
+2 < 422
+2 < Date: Thu, 11 Apr 2024 11:06:19 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 85
+2 < Connection: keep-alive
+2 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712833579&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=HHklP%2B4ov7cCxlFhVhdOqqcNBGHShY%2FY6aSb9DoZl20%3D"}]}
+2 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712833579&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=HHklP%2B4ov7cCxlFhVhdOqqcNBGHShY%2FY6aSb9DoZl20%3D
+2 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"55-NjrsT9gca4ZDmlQ/ixYZy7cuscc"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Server: cloudflare
+2 < CF-RAY: 872a81b089803144-MAD
+2 < alt-svc: h3=":443"; ma=86400
+{"errors":{"email":["has already been taken"],"username":["has already been taken"]}}
+
+13:06:19.856 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:06:19.893 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 88
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"rommel5@rommel.com","password":"rommel1rommel1","username":"tandy38"}}
+
+13:06:20.166 [main] DEBUG com.intuit.karate - response time in milliseconds: 272
+1 < 422
+1 < Date: Thu, 11 Apr 2024 11:06:20 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 47
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712833580&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=1dFg4bDS1%2FLGpsUDojXeRipn%2FVPAxdnDI0k3%2BGGELuo%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712833580&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=1dFg4bDS1%2FLGpsUDojXeRipn%2FVPAxdnDI0k3%2BGGELuo%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2f-BJEnYqgmLwV4NGkXB9OccFtans4"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872a81b2bf8a6665-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"email":["has already been taken"]}}
+
+13:06:20.174 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/SignUp.feature:60
+And status 201
+status code was: 422, expected: 201, response time in milliseconds: 272, url: https://api.realworld.io/api/users, response: 
+{"errors":{"email":["has already been taken"]}}
+classpath:conduitApp/feature/SignUp.feature:60
+13:06:20.498 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 3 (0 remaining) classpath:conduitApp/feature/SignUp.feature
+13:06:20.498 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+13:09:42.198 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @smoke
+13:09:42.549 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:09:42.551 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1712833782550
+13:09:43.088 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:09:43.332 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 88
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"earnest72@test.com","password":"rommel1rommel1","username":"rommel1"}}
+
+13:09:43.759 [main] DEBUG com.intuit.karate - response time in milliseconds: 421
+1 < 422
+1 < Date: Thu, 11 Apr 2024 11:09:43 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712833783&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=5erdT8F1LLpkb6LnJZsoWGv1NTyLqZARoX6dxciZXGM%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712833783&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=5erdT8F1LLpkb6LnJZsoWGv1NTyLqZARoX6dxciZXGM%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"32-JsHJTKwNHW5NSVjFTl5ds7a++54"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872a86ab4e225e23-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"username":["has already been taken"]}}
+
+13:09:43.780 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:09:43.821 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 88
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"rommel5@rommel.com","password":"rommel1rommel1","username":"isaac73"}}
+
+13:09:44.115 [main] DEBUG com.intuit.karate - response time in milliseconds: 294
+1 < 422
+1 < Date: Thu, 11 Apr 2024 11:09:44 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 47
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712833784&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=Lbcmj66ZqWiWLM5V4zxUv3QsFd1AgPifRx6nH1IggzA%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712833784&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=Lbcmj66ZqWiWLM5V4zxUv3QsFd1AgPifRx6nH1IggzA%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2f-BJEnYqgmLwV4NGkXB9OccFtans4"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872a86ad4d7a2fa3-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"email":["has already been taken"]}}
+
+13:09:44.442 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:conduitApp/feature/SignUp.feature
+13:09:44.442 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+14:11:20.641 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @smoke
+14:11:21.029 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:11:21.030 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1712837481029
+14:11:21.604 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:11:21.857 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 87
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"yanira21@test.com","password":"rommel1rommel1","username":"rommel1"}}
+
+14:11:22.367 [main] DEBUG com.intuit.karate - response time in milliseconds: 508
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:11:22 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712837482&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=nonoizhYoS6PEqNUqGQ%2Fj0anubeY7rOGMOgFYxHErso%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712837482&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=nonoizhYoS6PEqNUqGQ%2Fj0anubeY7rOGMOgFYxHErso%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"32-JsHJTKwNHW5NSVjFTl5ds7a++54"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872ae0f77dcf8669-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"username":["has already been taken"]}}
+
+14:11:22.385 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:11:22.425 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 89
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"rommel5@rommel.com","password":"rommel1rommel1","username":"collin69"}}
+
+14:11:22.686 [main] DEBUG com.intuit.karate - response time in milliseconds: 261
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:11:22 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 47
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712837482&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=nonoizhYoS6PEqNUqGQ%2Fj0anubeY7rOGMOgFYxHErso%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712837482&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=nonoizhYoS6PEqNUqGQ%2Fj0anubeY7rOGMOgFYxHErso%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2f-BJEnYqgmLwV4NGkXB9OccFtans4"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872ae0f9ce0e69fc-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"email":["has already been taken"]}}
+
+14:11:22.689 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/SignUp.feature:61
+And match response == { "errors": { "email": [ "ha already been taken" ]}}
+match failed: EQUALS
+  $ | not equal | match failed for name: 'errors' (MAP:MAP)
+  {"errors":{"email":["has already been taken"]}}
+  {"errors":{"email":["ha already been taken"]}}
+
+    $.errors | not equal | match failed for name: 'email' (MAP:MAP)
+    {"email":["has already been taken"]}
+    {"email":["ha already been taken"]}
+
+      $.errors.email | not equal | array match failed at index 0 (LIST:LIST)
+      ["has already been taken"]
+      ["ha already been taken"]
+
+        $.errors.email[0] | not equal (STRING:STRING)
+        'has already been taken'
+        'ha already been taken'
+
+classpath:conduitApp/feature/SignUp.feature:61
+14:11:23.023 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 3 (0 remaining) classpath:conduitApp/feature/SignUp.feature
+14:11:23.023 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+14:12:09.843 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @smoke
+14:12:10.231 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:12:10.233 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1712837530232
+14:12:10.789 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:12:11.039 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 86
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"ardis93@test.com","password":"rommel1rommel1","username":"rommel1"}}
+
+14:12:11.471 [main] DEBUG com.intuit.karate - response time in milliseconds: 426
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:12:11 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712837531&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=45m2hr%2FjYQ2wCCx75vDnannLrFBSg83LFIFgtfvPPOg%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712837531&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=45m2hr%2FjYQ2wCCx75vDnannLrFBSg83LFIFgtfvPPOg%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"32-JsHJTKwNHW5NSVjFTl5ds7a++54"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872ae22a991e60c6-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"username":["has already been taken"]}}
+
+14:12:11.498 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:12:11.532 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 89
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"rommel5@rommel.com","password":"rommel1rommel1","username":"alisha14"}}
+
+14:12:11.819 [main] DEBUG com.intuit.karate - response time in milliseconds: 286
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:12:11 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 47
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712837531&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=45m2hr%2FjYQ2wCCx75vDnannLrFBSg83LFIFgtfvPPOg%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712837531&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=45m2hr%2FjYQ2wCCx75vDnannLrFBSg83LFIFgtfvPPOg%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2f-BJEnYqgmLwV4NGkXB9OccFtans4"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872ae22cbe646675-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"email":["has already been taken"]}}
+
+14:12:12.176 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:conduitApp/feature/SignUp.feature
+14:12:12.177 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+14:14:26.229 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @smoke
+14:14:26.580 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:14:26.581 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1712837666580
+14:14:27.114 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:14:27.351 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 88
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"breanne10@test.com","password":"rommel1rommel1","username":"rommel1"}}
+
+14:14:27.917 [main] DEBUG com.intuit.karate - response time in milliseconds: 562
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:14:27 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712837667&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=4%2FyRt3QUIubcrqrbzTI49VVS%2BVmbP9RWKzLuOTMKRf0%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712837667&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=4%2FyRt3QUIubcrqrbzTI49VVS%2BVmbP9RWKzLuOTMKRf0%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"32-JsHJTKwNHW5NSVjFTl5ds7a++54"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872ae57ec938667b-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"username":["has already been taken"]}}
+
+14:14:27.941 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:14:27.979 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 87
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"rommel5@rommel.com","password":"rommel1rommel1","username":"chae84"}}
+
+14:14:28.236 [main] DEBUG com.intuit.karate - response time in milliseconds: 256
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:14:28 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 47
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712837668&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=zqbqX6heCesFzxW8wTbwZWAxyYJKOFYVglzTYpnUu9c%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712837668&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=zqbqX6heCesFzxW8wTbwZWAxyYJKOFYVglzTYpnUu9c%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2f-BJEnYqgmLwV4NGkXB9OccFtans4"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872ae5818e30867e-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"email":["has already been taken"]}}
+
+14:14:28.244 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:14:28.263 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/SignUp.feature:48
+And request
+"""
+{
+    "user": {
+        "email": #(email),
+        "password": rommel1rommel1,
+        "username": 
+    }
+}
+"""
+net.minidev.json.parser.ParseException: Unexpected character (}) at position 104.
+classpath:conduitApp/feature/SignUp.feature:48
+14:14:28.594 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 3 (0 remaining) classpath:conduitApp/feature/SignUp.feature
+14:14:28.595 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+14:17:10.555 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @smoke
+14:17:10.944 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:17:10.945 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1712837830944
+14:17:11.473 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:17:11.712 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 88
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"teodoro98@test.com","password":"rommel1rommel1","username":"rommel1"}}
+
+14:17:12.115 [main] DEBUG com.intuit.karate - response time in milliseconds: 399
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:17:12 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712837832&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=VSDXkxpccDagsuijuganXQa1JxGoHrAgYzXAebqB1r4%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712837832&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=VSDXkxpccDagsuijuganXQa1JxGoHrAgYzXAebqB1r4%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"32-JsHJTKwNHW5NSVjFTl5ds7a++54"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872ae981cd8d314b-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"username":["has already been taken"]}}
+
+14:17:12.136 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:17:12.167 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 90
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"rommel5@rommel.com","password":"rommel1rommel1","username":"ignacio26"}}
+
+14:17:12.436 [main] DEBUG com.intuit.karate - response time in milliseconds: 267
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:17:12 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 47
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712837832&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=VSDXkxpccDagsuijuganXQa1JxGoHrAgYzXAebqB1r4%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712837832&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=VSDXkxpccDagsuijuganXQa1JxGoHrAgYzXAebqB1r4%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2f-BJEnYqgmLwV4NGkXB9OccFtans4"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872ae983bf3d5e52-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"email":["has already been taken"]}}
+
+14:17:12.755 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:conduitApp/feature/SignUp.feature
+14:17:12.755 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+14:18:26.165 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @smoke
+14:18:26.522 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:18:26.523 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1712837906522
+14:18:27.049 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:18:27.307 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 87
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"cathey46@test.com","password":"rommel1rommel1","username":"rommel1"}}
+
+14:18:27.677 [main] DEBUG com.intuit.karate - response time in milliseconds: 367
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:18:27 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712837907&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=XAmemZTVm7Elzqfno4awOazyeBYCjrRX2en31CMCPXs%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712837907&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=XAmemZTVm7Elzqfno4awOazyeBYCjrRX2en31CMCPXs%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"32-JsHJTKwNHW5NSVjFTl5ds7a++54"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872aeb5a1fcc666b-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"username":["has already been taken"]}}
+
+14:18:27.699 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:18:27.723 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 86
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"rommel5@rommel.com","password":"rommel1rommel1","username":"mei15"}}
+
+14:18:27.984 [main] DEBUG com.intuit.karate - response time in milliseconds: 260
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:18:28 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 47
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712837907&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=XAmemZTVm7Elzqfno4awOazyeBYCjrRX2en31CMCPXs%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712837907&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=XAmemZTVm7Elzqfno4awOazyeBYCjrRX2en31CMCPXs%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2f-BJEnYqgmLwV4NGkXB9OccFtans4"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872aeb5bf864666c-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"email":["has already been taken"]}}
+
+14:18:27.991 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:18:28.019 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/SignUp.feature:48
+And request
+"""
+{
+    "user": {
+        "email": #(email),
+        "password": rommel1rommel1,
+        "username": 
+    }
+}
+"""
+net.minidev.json.parser.ParseException: Unexpected character (}) at position 104.
+classpath:conduitApp/feature/SignUp.feature:48
+14:18:28.322 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 3 (0 remaining) classpath:conduitApp/feature/SignUp.feature
+14:18:28.323 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+14:19:57.924 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @smoke
+14:19:58.290 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:19:58.291 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1712837998290
+14:19:58.770 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:19:59.017 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 86
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"milan43@test.com","password":"rommel1rommel1","username":"rommel1"}}
+
+14:19:59.438 [main] DEBUG com.intuit.karate - response time in milliseconds: 417
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:19:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712837999&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=2lDBC41yYsx3DZNJm7jiYExuYXJUMA13Hzq0n3f543U%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712837999&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=2lDBC41yYsx3DZNJm7jiYExuYXJUMA13Hzq0n3f543U%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"32-JsHJTKwNHW5NSVjFTl5ds7a++54"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872aed975c8c5e26-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"username":["has already been taken"]}}
+
+14:19:59.460 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:19:59.488 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 89
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"rommel5@rommel.com","password":"rommel1rommel1","username":"dianne47"}}
+
+14:19:59.743 [main] DEBUG com.intuit.karate - response time in milliseconds: 254
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:19:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 47
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712837999&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=2lDBC41yYsx3DZNJm7jiYExuYXJUMA13Hzq0n3f543U%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712837999&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=2lDBC41yYsx3DZNJm7jiYExuYXJUMA13Hzq0n3f543U%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2f-BJEnYqgmLwV4NGkXB9OccFtans4"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872aed997dca5e24-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"email":["has already been taken"]}}
+
+14:19:59.750 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:19:59.779 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/SignUp.feature:48
+And request
+"""
+{
+    "user": {
+        "email": #(email),
+        "password": rommel1rommel1,
+        "username": 
+    }
+}
+"""
+net.minidev.json.parser.ParseException: Unexpected character (}) at position 104.
+classpath:conduitApp/feature/SignUp.feature:48
+14:20:00.091 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 3 (0 remaining) classpath:conduitApp/feature/SignUp.feature
+14:20:00.091 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+14:20:28.822 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @smoke
+14:20:29.177 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:20:29.178 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1712838029177
+14:20:29.711 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:20:29.948 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 86
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"denny89@test.com","password":"rommel1rommel1","username":"rommel1"}}
+
+14:20:30.336 [main] DEBUG com.intuit.karate - response time in milliseconds: 385
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:20:30 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712838030&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=VJEau0kCrgIivmJXASrtGi4nMqINMWCTT175Cu5GYgQ%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712838030&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=VJEau0kCrgIivmJXASrtGi4nMqINMWCTT175Cu5GYgQ%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"32-JsHJTKwNHW5NSVjFTl5ds7a++54"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872aee588a3069f4-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"username":["has already been taken"]}}
+
+14:20:30.357 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:20:30.390 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 91
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"rommel5@rommel.com","password":"rommel1rommel1","username":"napoleon62"}}
+
+14:20:30.633 [main] DEBUG com.intuit.karate - response time in milliseconds: 242
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:20:30 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 47
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712838030&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=VJEau0kCrgIivmJXASrtGi4nMqINMWCTT175Cu5GYgQ%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712838030&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=VJEau0kCrgIivmJXASrtGi4nMqINMWCTT175Cu5GYgQ%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2f-BJEnYqgmLwV4NGkXB9OccFtans4"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872aee5a9ce186c8-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"email":["has already been taken"]}}
+
+14:20:30.642 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:20:30.663 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 80
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"lahoma51@test.com","password":"rommel1rommel1","username":""}}
+
+14:20:30.944 [main] DEBUG com.intuit.karate - response time in milliseconds: 280
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:20:30 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 42
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712838030&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=VJEau0kCrgIivmJXASrtGi4nMqINMWCTT175Cu5GYgQ%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712838030&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=VJEau0kCrgIivmJXASrtGi4nMqINMWCTT175Cu5GYgQ%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2a-AIsgLw77Dx1RWMepi6jZReyj6jg"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872aee5c5ca069f6-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"username":["can't be blank"]}}
+
+14:20:31.276 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:conduitApp/feature/SignUp.feature
+14:20:31.276 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+14:22:35.310 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @smoke
+14:22:35.697 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:22:35.698 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1712838155697
+14:22:36.270 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:22:36.532 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 86
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"alonzo9@test.com","password":"rommel1rommel1","username":"rommel1"}}
+
+14:22:36.954 [main] DEBUG com.intuit.karate - response time in milliseconds: 420
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:22:36 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712838156&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=J3JqK9UFKn6EQaMZwXXURv9wA%2Fo2wPFzS2FzZSYIst4%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712838156&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=J3JqK9UFKn6EQaMZwXXURv9wA%2Fo2wPFzS2FzZSYIst4%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"32-JsHJTKwNHW5NSVjFTl5ds7a++54"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872af16ff83f2fc3-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"username":["has already been taken"]}}
+
+14:22:36.970 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:22:37.006 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 91
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"rommel5@rommel.com","password":"rommel1rommel1","username":"catheryn63"}}
+
+14:22:37.247 [main] DEBUG com.intuit.karate - response time in milliseconds: 241
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:22:37 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 47
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712838157&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=DrZZh8Ne8UA6BXJ3npLy2X6dTRokSnJMoKXllrfvHz0%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712838157&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=DrZZh8Ne8UA6BXJ3npLy2X6dTRokSnJMoKXllrfvHz0%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2f-BJEnYqgmLwV4NGkXB9OccFtans4"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872af171fbba8675-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"email":["has already been taken"]}}
+
+14:22:37.254 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:22:37.272 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 79
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"sabra34@test.com","password":"rommel1rommel1","username":""}}
+
+14:22:37.648 [main] DEBUG com.intuit.karate - response time in milliseconds: 375
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:22:37 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 42
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712838157&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=DrZZh8Ne8UA6BXJ3npLy2X6dTRokSnJMoKXllrfvHz0%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712838157&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=DrZZh8Ne8UA6BXJ3npLy2X6dTRokSnJMoKXllrfvHz0%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2a-AIsgLw77Dx1RWMepi6jZReyj6jg"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872af1746e6e86c9-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"username":["can't be blank"]}}
+
+14:22:37.654 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:22:37.672 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 91
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"claudette87@test.com","password":"rommel1rommel1","username":"kaleigh8"}}
+
+14:22:38.097 [main] DEBUG com.intuit.karate - response time in milliseconds: 424
+1 < 201
+1 < Date: Thu, 11 Apr 2024 12:22:38 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 311
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712838157&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=DrZZh8Ne8UA6BXJ3npLy2X6dTRokSnJMoKXllrfvHz0%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712838157&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=DrZZh8Ne8UA6BXJ3npLy2X6dTRokSnJMoKXllrfvHz0%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"137-WbCd/CugUwc1dvVS7IUKcHFhAO8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872af17619672165-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"user":{"id":20138,"email":"claudette87@test.com","username":"kaleigh8","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyMDEzOH0sImlhdCI6MTcxMjgzODE1OCwiZXhwIjoxNzE4MDIyMTU4fQ.t-ydDgJRzp3qmuhGV89t-S-HI3Ou0kZWKwMabH1wMBg"}}
+
+14:22:38.436 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:conduitApp/feature/SignUp.feature
+14:22:38.436 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+14:28:46.901 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @smoke
+14:28:47.296 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:28:47.298 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1712838527297
+14:28:47.822 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:28:48.085 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 87
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"rebeca36@test.com","password":"rommel1rommel1","username":"rommel1"}}
+
+14:28:48.541 [main] DEBUG com.intuit.karate - response time in milliseconds: 450
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:28:48 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712838528&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=amHSQzSbqtoqPVbMIY%2B34Suig7oCK0h5TUKcvpXpzNQ%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712838528&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=amHSQzSbqtoqPVbMIY%2B34Suig7oCK0h5TUKcvpXpzNQ%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"32-JsHJTKwNHW5NSVjFTl5ds7a++54"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872afa825944215a-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"username":["has already been taken"]}}
+
+14:28:48.564 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:28:48.590 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 88
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"rommel5@rommel.com","password":"rommel1rommel1","username":"beula69"}}
+
+14:28:48.858 [main] DEBUG com.intuit.karate - response time in milliseconds: 267
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:28:48 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 47
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712838528&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=amHSQzSbqtoqPVbMIY%2B34Suig7oCK0h5TUKcvpXpzNQ%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712838528&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=amHSQzSbqtoqPVbMIY%2B34Suig7oCK0h5TUKcvpXpzNQ%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2f-BJEnYqgmLwV4NGkXB9OccFtans4"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872afa845faf2f83-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"email":["has already been taken"]}}
+
+14:28:48.864 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:28:48.887 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 80
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"ebonie23@test.com","password":"rommel1rommel1","username":""}}
+
+14:28:49.201 [main] DEBUG com.intuit.karate - response time in milliseconds: 313
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:28:49 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 42
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712838529&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=FCMptEmBPASQUeyxtqVN54TpMxswAFLOeP8iuydCWS8%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712838529&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=FCMptEmBPASQUeyxtqVN54TpMxswAFLOeP8iuydCWS8%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2a-AIsgLw77Dx1RWMepi6jZReyj6jg"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872afa8639ed60cc-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"username":["can't be blank"]}}
+
+14:28:49.214 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:28:49.236 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 89
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"melodee90@test.com","password":"rommel1rommel1","username":"alysia27"}}
+
+14:28:49.591 [main] DEBUG com.intuit.karate - response time in milliseconds: 354
+1 < 201
+1 < Date: Thu, 11 Apr 2024 12:28:49 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 309
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712838529&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=FCMptEmBPASQUeyxtqVN54TpMxswAFLOeP8iuydCWS8%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712838529&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=FCMptEmBPASQUeyxtqVN54TpMxswAFLOeP8iuydCWS8%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"135-2ItRfIBg4Z5PmTnDitoD4XYO6JI"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872afa888b9386c8-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"user":{"id":20140,"email":"melodee90@test.com","username":"alysia27","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyMDE0MH0sImlhdCI6MTcxMjgzODUyOSwiZXhwIjoxNzE4MDIyNTI5fQ.toLM_8lfUNe5E8x0TTS-4qSfepbIAVd9KFTGKXNLfCU"}}
+
+14:28:49.925 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:conduitApp/feature/SignUp.feature
+14:28:49.926 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
