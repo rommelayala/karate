@@ -11,25 +11,33 @@ Background: Define URL
     #* def token = response.user.token
     * def tokenResponse = callonce read('classpath:helpers/CreateToken.feature')
     * def token = tokenResponse.authToken
+    
     * def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json')
+    * def datagenerator = Java.type('helpers.DataGenerator')
+    * set articleRequestBody.article.title = datagenerator.getRandomArticleValues().title
+    * set articleRequestBody.article.description = datagenerator.getRandomArticleValues().description
+    * set articleRequestBody.article.body = datagenerator.getRandomArticleValues().body
+    
 
-    @smoke
+    
 Scenario: Create a new article
     
     #Utilizamos el token en el header 
     Given header Authorization = 'Token ' + token
     And path 'articles'
     And request articleRequestBody
+    * print articleRequestBody
     When method Post
     Then status 201
     Then response.article.title == 'lolo'
 
-
+@smoke
 Scenario: Create and Delete a new article
     Given header Authorization = 'Token ' + token
     #Create new article
     And path 'articles'
     And request articleRequestBody
+    * print articleRequestBody
     When method Post
     Then status 201
     Then response.article.title == 'lolo'
