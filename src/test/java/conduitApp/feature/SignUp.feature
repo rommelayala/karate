@@ -1,4 +1,3 @@
-@smoke
 Feature: Create new User
 
 Background:

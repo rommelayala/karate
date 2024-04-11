@@ -11,13 +11,15 @@ Background: Define URL
     #* def token = response.user.token
     * def tokenResponse = callonce read('classpath:helpers/CreateToken.feature')
     * def token = tokenResponse.authToken
+    * def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json')
 
+    @smoke
 Scenario: Create a new article
     
     #Utilizamos el token en el header 
     Given header Authorization = 'Token ' + token
     And path 'articles'
-    And request { "article": { "title": "lolo", "description": "lolo", "body": "hbdvlauebyv lyebr", "tagList": [] } }
+    And request articleRequestBody
     When method Post
     Then status 201
     Then response.article.title == 'lolo'
@@ -27,7 +29,7 @@ Scenario: Create and Delete a new article
     Given header Authorization = 'Token ' + token
     #Create new article
     And path 'articles'
-    And request { "article": { "title": "lolo", "description": "lolo", "body": "hbdvlauebyv lyebr", "tagList": [] } }
+    And request articleRequestBody
     When method Post
     Then status 201
     Then response.article.title == 'lolo'

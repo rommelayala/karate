@@ -5402,3 +5402,291 @@ classpath:conduitApp/feature/SignUp.feature:48
 
 14:28:49.925 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:conduitApp/feature/SignUp.feature
 14:28:49.926 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+14:37:30.912 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @smoke
+14:37:31.284 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:37:31.286 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1712839051285
+14:37:31.810 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:37:31.830 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:helpers/CreateToken.feature')
+14:37:31.979 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"rommel@rommel.com","password":"rommelrommel"}}
+
+14:37:32.532 [main] DEBUG com.intuit.karate - response time in milliseconds: 548
+1 < 200
+1 < Date: Thu, 11 Apr 2024 12:37:32 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712839052&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=Jv3XxH4TNwAVmXbtAJ4ktE32%2BKmJrfWXgjmUdxniLk8%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712839052&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=Jv3XxH4TNwAVmXbtAJ4ktE32%2BKmJrfWXgjmUdxniLk8%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"127-dYotsBcVCv34wFRtypczkrrJWH0"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872b074c7d931bbb-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"user":{"email":"rommel@rommel.com","username":"rommel","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxOTc0OX0sImlhdCI6MTcxMjgzOTA1MiwiZXhwIjoxNzE4MDIzMDUyfQ.zWlIS75K1N59ZYb_NqFl9CKJnrBeb4LxbHetmH5iaM4"}}
+
+14:37:32.542 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:helpers/CreateToken.feature')
+14:37:32.551 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Article.feature:14
+* def articleRequestBody = call('classpath:condoutApp/json/newArticleRequest.json')
+js failed:
+>>>>
+01: call('classpath:condoutApp/json/newArticleRequest.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "call" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:conduitApp/feature/Article.feature:14
+14:37:32.880 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 3 (0 remaining) classpath:conduitApp/feature/Article.feature
+14:37:32.885 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:37:32.997 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 89
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"mitchell49@test.com","password":"rommel1rommel1","username":"rommel1"}}
+
+14:37:33.304 [main] DEBUG com.intuit.karate - response time in milliseconds: 306
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:37:33 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712839053&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=ekD9YPMKhRuFhP2%2FeOE9z%2Bn9mcX61A8xeyyn5HVxgC0%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712839053&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=ekD9YPMKhRuFhP2%2FeOE9z%2Bn9mcX61A8xeyyn5HVxgC0%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"32-JsHJTKwNHW5NSVjFTl5ds7a++54"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872b0751c88b5e47-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"username":["has already been taken"]}}
+
+14:37:33.322 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:37:33.350 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 90
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"rommel5@rommel.com","password":"rommel1rommel1","username":"freeman34"}}
+
+14:37:33.628 [main] DEBUG com.intuit.karate - response time in milliseconds: 277
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:37:33 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 47
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712839053&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=ekD9YPMKhRuFhP2%2FeOE9z%2Bn9mcX61A8xeyyn5HVxgC0%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712839053&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=ekD9YPMKhRuFhP2%2FeOE9z%2Bn9mcX61A8xeyyn5HVxgC0%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2f-BJEnYqgmLwV4NGkXB9OccFtans4"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872b07541a551bb3-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"email":["has already been taken"]}}
+
+14:37:33.633 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:37:33.655 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 83
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"clemencia38@test.com","password":"rommel1rommel1","username":""}}
+
+14:37:33.890 [main] DEBUG com.intuit.karate - response time in milliseconds: 235
+1 < 422
+1 < Date: Thu, 11 Apr 2024 12:37:33 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 42
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712839053&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=ekD9YPMKhRuFhP2%2FeOE9z%2Bn9mcX61A8xeyyn5HVxgC0%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712839053&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=ekD9YPMKhRuFhP2%2FeOE9z%2Bn9mcX61A8xeyyn5HVxgC0%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2a-AIsgLw77Dx1RWMepi6jZReyj6jg"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872b0755e86e5e1d-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"username":["can't be blank"]}}
+
+14:37:33.897 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:37:33.915 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 90
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"rosamond40@test.com","password":"rommel1rommel1","username":"leslie74"}}
+
+14:37:34.318 [main] DEBUG com.intuit.karate - response time in milliseconds: 402
+1 < 201
+1 < Date: Thu, 11 Apr 2024 12:37:34 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 310
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712839054&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=AAVfE7STnB8dF01GlrytrDPVrj9xuo9XmzPOUnQoboQ%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712839054&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=AAVfE7STnB8dF01GlrytrDPVrj9xuo9XmzPOUnQoboQ%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"136-QmtIEfKWE4jqofmTkd+QYoERmjc"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872b07579e025e52-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"user":{"id":20141,"email":"rosamond40@test.com","username":"leslie74","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyMDE0MX0sImlhdCI6MTcxMjgzOTA1NCwiZXhwIjoxNzE4MDIzMDU0fQ.XzdCEU4B1RxcVBoHtg7jVIafKv5VHdBnyNKTiasohpQ"}}
+
+14:37:34.421 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:conduitApp/feature/SignUp.feature
+14:37:34.421 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+14:38:48.094 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @smoke
+14:38:48.465 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:38:48.467 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1712839128466
+14:38:48.976 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:38:48.994 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:helpers/CreateToken.feature')
+14:38:49.146 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"rommel@rommel.com","password":"rommelrommel"}}
+
+14:38:50.758 [main] DEBUG com.intuit.karate - response time in milliseconds: 1607
+1 < 200
+1 < Date: Thu, 11 Apr 2024 12:38:50 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712839130&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=Mmvo1Ze76bEhV6vBKhhca9zAGPtsRyHSDNQoc7BZBkg%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712839130&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=Mmvo1Ze76bEhV6vBKhhca9zAGPtsRyHSDNQoc7BZBkg%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"127-6SUZcxSNzMrkg+gr5bF/5Rz6LDE"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872b09356a4669eb-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"user":{"email":"rommel@rommel.com","username":"rommel","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxOTc0OX0sImlhdCI6MTcxMjgzOTEzMCwiZXhwIjoxNzE4MDIzMTMwfQ.d5YmuZxlt0TigUZKD1nyTh-e7XNE1dC1LVXVVPNFf9E"}}
+
+14:38:50.768 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:helpers/CreateToken.feature')
+14:38:50.783 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Article.feature:14
+* def articleRequestBody = read('classpath:condoutApp/json/newArticleRequest.json')
+js failed:
+>>>>
+01: read('classpath:condoutApp/json/newArticleRequest.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: condoutApp/json/newArticleRequest.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:124)
+- <js>.:program(Unnamed:1)
+
+classpath:conduitApp/feature/Article.feature:14
+14:38:51.109 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 3 (0 remaining) classpath:conduitApp/feature/Article.feature
+14:38:51.112 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+14:39:47.309 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @smoke
+14:39:47.706 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:39:47.708 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1712839187707
+14:39:48.212 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:39:48.231 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:helpers/CreateToken.feature')
+14:39:48.378 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"rommel@rommel.com","password":"rommelrommel"}}
+
+14:39:48.874 [main] DEBUG com.intuit.karate - response time in milliseconds: 492
+1 < 200
+1 < Date: Thu, 11 Apr 2024 12:39:48 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712839188&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=RhNuBtKCFGwiQebw3cXDoWOKZ1wnGe94PPmtc7wj2RU%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712839188&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=RhNuBtKCFGwiQebw3cXDoWOKZ1wnGe94PPmtc7wj2RU%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"127-LvoiAv5rNkYQyRj/ev7Hn0w6bz4"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872b0aa0bba51505-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"user":{"email":"rommel@rommel.com","username":"rommel","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxOTc0OX0sImlhdCI6MTcxMjgzOTE4OCwiZXhwIjoxNzE4MDIzMTg4fQ.cfYc1PvqyKDaBPSmk-xZE4VgLaAWrGOPSwlaH8qpfuI"}}
+
+14:39:48.887 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:helpers/CreateToken.feature')
+14:39:48.897 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxOTc0OX0sImlhdCI6MTcxMjgzOTE4OCwiZXhwIjoxNzE4MDIzMTg4fQ.cfYc1PvqyKDaBPSmk-xZE4VgLaAWrGOPSwlaH8qpfuI
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 89
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"title":"lolo","description":"lolo","body":"hbdvlauebyv lyebr","tagList":[]}}
+
+14:39:49.192 [main] DEBUG com.intuit.karate - response time in milliseconds: 293
+1 < 201
+1 < Date: Thu, 11 Apr 2024 12:39:49 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 344
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712839189&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=26p86yl08WSnSL8JqiwOPha2AJPehxRmDiBQzsvmlac%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1712839189&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=26p86yl08WSnSL8JqiwOPha2AJPehxRmDiBQzsvmlac%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"158-qtxh+0ADrVOt5pe9Y5UvEDLk2mc"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 872b0aa3295c2f8b-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{"article":{"slug":"lolo-19749","title":"lolo","description":"lolo","body":"hbdvlauebyv lyebr","tagList":[],"createdAt":"2024-04-11T12:39:49.128Z","updatedAt":"2024-04-11T12:39:49.128Z","favorited":false,"favoritesCount":0,"author":{"username":"rommel","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}}
+
+14:39:49.540 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 3 (0 remaining) classpath:conduitApp/feature/Article.feature
+14:39:49.543 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
