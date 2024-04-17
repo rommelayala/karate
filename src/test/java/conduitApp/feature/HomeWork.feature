@@ -88,7 +88,6 @@ Feature: Home Work
         # Step 8: Verify that slug ID from Step 2 exist in one of the favorite articles
         And match f_art_slug == response.articles[0].slug
 
-    @smoke
     Scenario: Comment articles
         # Step 1: Get atricles of the global feed
         Given path 'articles'

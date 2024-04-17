@@ -8,15 +8,18 @@ function fn() {
     apiUrl: 'https://api.realworld.io/api/'
   }
   if (env == 'dev') {
-    
+
     config.userEmail = 'rommel@rommel.com'
     config.userPassword = 'rommelrommel'
-  
+
   } else if (env == 'qa') {
-    
+
     config.userEmail = 'rommelqa@rommel.com'
     config.userPassword = 'rommelqarommelqa'
 
   }
+  var accessToken = karate.callSingle('classpath:helpers/CreateToken.feature', config).authToken
+  karate.configure('headers', { Authorization: 'Token ' + accessToken })
+
   return config;
 }
