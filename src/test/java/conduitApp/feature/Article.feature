@@ -31,7 +31,6 @@ Scenario: Create a new article
     Then status 201
     Then response.article.title == 'lolo'
 
-@smoke
 Scenario: Create and Delete a new article
     Given header Authorization = 'Token ' + token
     #Create new article
